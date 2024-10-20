@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Destinations - Boracay</title>
+</head>
+<body>
+    <header>
+        <div class="header-index">
+            <h1 class="header-title">Pinoy Escapes</h1>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <nav id="nav-menu" class="nav-menu">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="destinations.html">destinations</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="destinations">
+            <h2>Boracay</h2>
+            <table>
+                <tr>
+                    <th>Located</th>
+                    <th>Famous For</th>
+                    <th>Travel Hours From Manila</th>
+                    <th>Activities</th>
+                </tr>
+                <tr>
+                    <td>Boracay Island, Aklan, Philippines</td>
+                    <td>Known for its stunning white beaches, particularly White Beach, and vibrant nightlife.</td>
+                    <td>About 1 hour by plane.</td>
+                    <td>Swimming, beach lounging, water sports, and nightlife experiences.</td>
+                </tr>
+            </table>
+            <div class="video-container">
+                <video controls>
+                    <source controls autoplay src="images/boracay-vid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/bora1.jpg" alt="Boracay Image" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/bora2.jpg" alt="Boracay Image" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/bora3.jpg" alt="Boracay Image" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/bora4.jpg" alt="Boracay Image" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/bora5.jpg" alt="Boracay Image" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/bora6.jpg" alt="Boracay Image" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/bora7.jpg" alt="Boracay Image" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/bora8.heic" alt="Boracay Image" onclick="openModal(this.src, this.alt)">
+                </div>
+            </div>
+
+            <table>
+                <tr>
+                    <th>Travel Tips</th>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Best Time to Visit</strong><br>
+                        The ideal time to visit Boracay is during the dry season from November to April. This period offers clear skies and excellent beach conditions for swimming and sunbathing.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>How to Get There</strong><br>
+                        Fly to either Caticlan or Kalibo Airport from Manila or Cebu. Caticlan is closer to the island and is about a 15-minute boat ride to Boracay.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Where to Stay</strong><br>
+                        Boracay has a wide range of accommodations, from budget hostels to luxury resorts. Station 1 is known for upscale hotels, while Station 2 is more vibrant with nightlife and dining options.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Pack Light, Pack Smart</strong><br>
+                        Bring lightweight clothing, swimwear, and flip-flops for beach activities. Don’t forget essentials like sunscreen, a hat, and sunglasses to protect against the sun.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Enjoy Water Sports</strong><br>
+                        Boracay is famous for its water sports. Try parasailing, jet skiing, or paddleboarding for an adrenaline rush.
+                    </td>
+                </tr>
+            </table>
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img" alt="">
+    </div>
+</body>
+</html>

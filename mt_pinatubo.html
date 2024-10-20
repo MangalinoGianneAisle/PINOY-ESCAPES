@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Destinations - Mt. Pinatubo</title>
+</head>
+<body>
+    <header>
+        <div class="header-index">
+            <h1 class="header-title">Pinoy Escapes</h1>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <nav id="nav-menu" class="nav-menu">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="destinations.html">destinations</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="destinations">
+            <h2>Mount Pinatubo</h2>
+
+            <div class="table-container">
+            <table>
+                <tr>
+                    <th>Located</th>
+                    <th>Famous For</th>
+                    <th>Travel Hours From Manila</th>
+                    <th>Activities</th>
+                </tr>
+                <tr>
+                    <td>Zambales, Pampanga, and Tarlac, Philippines</td>
+                    <td>Its beautiful crater lake, formed after the 1991 eruption. The lake's turquoise waters and the surrounding landscapes make it a stunning destination.</td>
+                    <td>Around 2-3 hours by car.</td>
+                    <td>Trekking, 4x4 off-road adventure, boat ride on the crater lake, and sightseeing.</td>
+                </tr>
+            </table>
+            <div class="video-container">
+                <video controls>
+                    <source controls autoplay src="images/pinatubo-vid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/MTPT1.jpg" alt="Gallery Image 1" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/MTPT2.jpg" alt="Gallery Image 2" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/MTPT3.jpg" alt="Gallery Image 3" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/MTPT4.jpg" alt="Gallery Image 4" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/MTPT5.jpg" alt="Gallery Image 5" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/MTPT6.jpg" alt="Gallery Image 6" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/MTPT7.webp" alt="Gallery Image 7" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/MTPT8.jpg" alt="Gallery Image 8" onclick="openModal(this.src, this.alt)">
+                </div>
+            </div>
+
+
+            <table>
+            </div>
+                <tr>
+                    <th>Travel Tips</th>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Best Time to Visit</strong><br>
+                        The best time to visit Mt. Pinatubo is during the dry season, from November to April. This period offers clear skies and optimal conditions for trekking and exploring the stunning crater lake.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>How to Get There</strong><br>
+                        You can reach Mt. Pinatubo by taking a 4x4 vehicle from Capas, Tarlac, which is about a 2-hour drive from Manila. Alternatively, several tour operators offer packages that include transportation from Metro Manila.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Where to Stay</strong><br>
+                        Consider staying in nearby towns like Capas or Tarlac City, where you can find a range of accommodations from budget hostels to comfortable hotels. Booking a tour package often includes transportation and lodging options.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Pack Light, Pack Smart</strong><br>
+                        Wear comfortable clothing and sturdy hiking shoes, as the trek can be challenging. Don’t forget essentials like sunscreen, a hat, and plenty of water. A lightweight backpack is useful for carrying your gear during the hike.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Explore Beyond the Crater Lake</strong><br>
+                        While the crater lake is the highlight, take time to explore the surrounding landscapes, including unique rock formations and lush vegetation. The hike offers beautiful views and opportunities for photography.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Rent a 4x4 Vehicle</strong><br>
+                        If you prefer a more adventurous experience, rent a 4x4 vehicle for the bumpy ride to the jump-off point. Ensure you hire a guide for safety and to enrich your experience with local knowledge.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Try Local Snacks</strong><br>
+                        Taste local delicacies like "tapsilog" (a Filipino breakfast dish of beef tapa, fried rice, and egg) and "kakanin" (Filipino rice cakes) from local vendors near the trailhead.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Respect the Environment</strong><br>
+                        Keep the area pristine by following Leave No Trace principles. Take all your trash with you and be mindful of the delicate ecosystem in the area.
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img" alt="">
+    </div>
+</body>
+</html>

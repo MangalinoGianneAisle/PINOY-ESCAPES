@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Destinations - Mt. Pinatubo</title>
+</head>
+<body>
+    <header>
+        <div class="header-index">
+            <h1 class="header-title">Pinoy Escapes</h1>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <nav id="nav-menu" class="nav-menu">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="destinations.html">destinations</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="destinations">
+            <h2>CALLE CRISOLOGO STREET, VIGAN</h2>
+            <table>
+                <tr>
+                    <th>Located</th>
+                    <th>Famous For</th>
+                    <th>Travel Hours From Manila</th>
+                    <th>Activities</th>
+                </tr>
+                <tr>
+                    <td>Vigan City, Ilocos Sur Philippines</td>
+                    <td>Well-preserved Spanish colonial street, UNESCO World Heritage site.</td>
+                    <td>Around 8-9 hours by bus or 1 hour by flight to Laoag, then 1.5 hours by van</td>
+                    <td>Strolling, shopping, dining, cultural tours</td>
+                </tr>
+            </table>
+            <div class="video-container">
+                <video controls>
+                    <source controls autoplay src="images/Virtual Tour ｜ It's More Fun with You in Vigan.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="images/vigan1.jpg" alt="Gallery Image 1"onclick="openModal(this.src, this.alt)">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/vigan2.jpg" alt="Gallery Image 2"onclick="openModal(this.src, this.alt)">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/vigan3.jpg" alt="Gallery Image 3"onclick="openModal(this.src, this.alt)">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/vigan4.jpg" alt="Gallery Image 4"onclick="openModal(this.src, this.alt)">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/vigan5.jpg" alt="Gallery Image 5"onclick="openModal(this.src, this.alt)">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/vigan6.jpg" alt="Gallery Image 6"onclick="openModal(this.src, this.alt)">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/vigan7.jpg" alt="Gallery Image 7"onclick="openModal(this.src, this.alt)">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/vigan8.jpg" alt="Gallery Image 8"onclick="openModal(this.src, this.alt)">
+                    </div>
+            </div>
+            <table>
+                <tr>
+                    <th>Travel Tips</th>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Best Time to Visit</strong><br>
+                        The best time to visit Vigan is from November to April, during the dry season. This is when the weather is cooler and ideal for walking tours.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>How to Get There</strong><br>
+                        You can reach Vigan City by taking a bus from Manila, which takes around 8-9 hours. Alternatively, you can fly to Laoag and then take a van or bus to Vigan (about 1.5 hours).
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Where to Stay</strong><br>
+                        Stay in nearby heritage hotels or guesthouses that reflect the colonial charm of the city. Popular options include hotels along Calle Crisologo or in the city center for easy access to attractions.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Experience the Night Market</strong><br>
+                        In the evenings, Calle Crisologo comes alive with food stalls and vendors. Enjoy the vibrant atmosphere and sample more local dishes while soaking in the colonial ambiance.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Explore the Heritage Houses </strong><br>
+                        Take the time to visit the ancestral homes and museums along Calle Crisologo, such as the Syquia Mansion and the Crisologo Museum, to learn about the history and culture of the area.
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Enjoy Local Cuisine</strong><br>
+                        Try local delicacies such as "empanada" (a savory pastry), "longganisa" (local sausage), and "bagnet" (crispy pork belly) from street vendors and local eateries.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Shop for Souvenirs</strong><br>
+                        Calle Crisologo is famous for its souvenirs, including handmade crafts, woven products, and local delicacies. Don’t forget to haggle for the best prices!
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img" alt="">
+    </div>
+</body>
+</html>
