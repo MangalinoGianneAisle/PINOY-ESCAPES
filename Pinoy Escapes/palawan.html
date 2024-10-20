@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Destinations - Coron, Palawan</title>
+</head>
+<body>
+    <header>
+        <div class="header-index">
+            <h1 class="header-title">Pinoy Escapes</h1>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <nav id="nav-menu" class="nav-menu">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="destinations.html">destinations</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="destinations">
+            <h2>Coron, Palawan</h2>
+            <table>
+                <tr>
+                    <th>Located</th>
+                    <th>Famous For</th>
+                    <th>Travel Hours From Manila</th>
+                    <th>Activities</th>
+                </tr>
+                <tr>
+                    <td>Coron, Palawan, Philippines</td>
+                    <td>Crystal-clear lagoons, beautiful coral reefs, and World War II shipwrecks. Coron is a popular spot for diving and snorkeling.</td>
+                    <td>Approximately 1-2 hours by plane.</td>
+                    <td>Island hopping, snorkeling, scuba diving, and enjoying hot springs.</td>
+                </tr>
+            </table>
+            <div class="video-container">
+                <video controls>
+                    <source controls autoplay src="images/coron-vid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/palawan1.jpg" alt="Coron Image 1" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/palawan2.jpg" alt="Coron Image 2" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/palawan3.jpg" alt="Coron Image 3" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/palawan4.jpg" alt="Coron Image 4" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/palawan5.jpg" alt="Coron Image 5" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/palawan6.jpg" alt="Coron Image 6" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/palawan7.jpg" alt="Coron Image 7" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/palawan8.jpg" alt="Coron Image 8" onclick="openModal(this.src, this.alt)">
+                </div>
+            </div>
+
+            <table>
+                <tr>
+                    <th>Travel Tips</th>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Best Time to Visit</strong><br>
+                        The best time to visit Coron is during the dry season, from November to May. This period offers the best weather conditions for outdoor activities and exploring the stunning islands and lagoons.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>How to Get There</strong><br>
+                        Fly directly to Francisco B. Reyes Airport (Coron) from Manila or Cebu for the most convenient route. It's about 1.5 hours by plane from Manila. Alternatively, you can take a ferry from El Nido or other nearby destinations.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Where to Stay</strong><br>
+                        Coron Town is a popular area for tourists, offering a variety of accommodations, from luxury resorts to budget-friendly guesthouses. Staying here will keep you close to shops, restaurants, and tour operators.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Pack Light, Pack Smart</strong><br>
+                        Bring lightweight, breathable clothing suitable for tropical weather. Don’t forget essentials like sunscreen, a reusable water bottle, and a waterproof bag for your valuables during island hopping.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Try the Local Cuisine</strong><br>
+                        Don't miss out on local dishes like fresh seafood, especially the grilled fish and the traditional Filipino dessert, leche flan. Explore local eateries for authentic flavors.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Stay Hydrated</strong><br>
+                        Always carry a water bottle, as it can get hot while exploring the islands. Stay hydrated, especially during outdoor activities.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Respect the Environment</strong><br>
+                        Coron is known for its natural beauty, so make sure to follow eco-friendly practices. Avoid littering, use reef-safe sunscreen, and respect wildlife and local customs.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Book Tours in Advance</strong><br>
+                        To get the best experience and avoid missing out, consider booking your island-hopping tours in advance, especially during peak season.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Learn Basic Filipino Phrases</strong><br>
+                        Knowing a few Filipino phrases can enhance your travel experience. Locals appreciate when visitors make an effort to speak their language.
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <div id="myModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img" alt="">
+    </div>
+</body>
+</html>

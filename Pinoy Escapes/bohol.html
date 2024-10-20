@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Destinations - Bohol</title>
+</head>
+<body>
+    <header>
+        <div class="header-index">
+            <h1 class="header-title">Pinoy Escapes</h1>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <nav id="nav-menu" class="nav-menu">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="destinations.html">destinations</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="destinations">
+            <h2>BOHOL CHOCOLATE HILLS</h2>
+            <table>
+                <tr>
+                    <th>Located</th>
+                    <th>Famous For</th>
+                    <th>Travel Hours From Manila</th>
+                    <th>Activities</th>
+                </tr>
+                <tr>
+                    <td>Carmen, Bohol, Philippines</td>
+                    <td>Unique geological formations that resemble chocolate mounds, turning brown in the dry season.</td>
+                    <td>About 1.5 hours by plane to Panglao Island, then a short drive to the hills.</td>
+                    <td>Sightseeing, hiking, and visiting nearby attractions like the Tarsier Sanctuary.</td>
+                </tr>
+            </table>
+            <div class="video-container">
+                <video controls>
+                    <source controls autoplay src="images/bohol-vid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/bohol1.jpg" alt="Bohol Image 1" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/bohol2.jpg" alt="Bohol Image 2" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/bohol3.jpg" alt="Bohol Image 3" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/bohol4.jpg" alt="Bohol Image 4" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/bohol5.jpg" alt="Bohol Image 5" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/bohol6.jpg" alt="Bohol Image 6" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/bohol7.jpg" alt="Bohol Image 7" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/bohol8.jpg" alt="Bohol Image 8" onclick="openModal(this.src, this.alt)">
+                </div>
+            </div>
+
+            <table>
+                <tr>
+                    <th>Travel Tips</th>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Best Time to Visit</strong><br>
+                        The best time to visit Bohol is from November to April during the dry season. This is when you can fully enjoy the outdoor activities and natural attractions.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>How to Get There</strong><br>
+                        Fly to Bohol-Panglao International Airport from Manila or Cebu. Alternatively, you can take a ferry from Cebu to Tagbilaran City, the capital of Bohol.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Where to Stay</strong><br>
+                        Panglao Island is a popular choice for tourists, with many resorts and accommodations available. Staying here provides easy access to the beaches and diving spots.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Pack Light, Pack Smart</strong><br>
+                        Bring swimwear, lightweight clothing, and reef-safe sunscreen. If you plan to visit the Chocolate Hills or go island hopping, consider packing a waterproof bag.
+                    </td>
+                </tr>
+                <!-- Add more travel tips as needed -->
+            </table>
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img" alt="">
+    </div>
+</body>
+</html>

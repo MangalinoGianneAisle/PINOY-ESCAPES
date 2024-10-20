@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="header-index">
+                <h1 class="header-title">Pinoy Escapes</h1>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <nav id="nav-menu" class="nav-menu">
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="destinations.html">destinations</a>
+                <a href="contact.html">contact</a>
+            </nav>
+        </header>
+
+        <div class="contact-box">
+            <h2>Contact Us</h2>
+            <p class="contact-info">We’re here for you! If you have any questions or want to make a booking, simply fill out the form below, and we’ll get back to you soon!</p>
+            <form class="contact-form">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="John" required>
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="0912-345-6789" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your message here..." required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="icon-link">
+                    <i class="fab fa-facebook-f"></i> 
+                    PinoyEscapes.com
+                </a>
+                <a href="mailto:PinoyEscapes@gmail.com" class="icon-link">
+                    <i class="fas fa-envelope"></i> 
+                    PinoyEscapes@gmail.com
+                </a>
+                <a href="tel:09994899536" class="icon-link">
+                    <i class="fas fa-phone-alt"></i> 
+                    09994899536
+                </a>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>

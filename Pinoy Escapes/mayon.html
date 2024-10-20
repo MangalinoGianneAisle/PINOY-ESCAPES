@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Destinations - Mayon Volcano</title>
+</head>
+<body>
+    <div class="header-index">
+        <h1 class="header-title">Pinoy Escapes</h1>
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+    <nav id="nav-menu" class="nav-menu">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="destinations.html">destinations</a>
+        <a href="contact.html">contact</a>
+    </nav>
+</header>
+    <main>
+        <section id="destinations">
+            <h2>MAYON VOLCANO</h2>
+            <table>
+                <tr>
+                    <th>Located</th>
+                    <th>Famous For</th>
+                    <th>Travel Hours From Manila</th>
+                    <th>Activities</th>
+                </tr>
+                <tr>
+                    <td>Albay, Bicol Region, Philippines</td>
+                    <td>Its perfectly symmetrical cone shape and stunning views, it is an iconic symbol of the Bicol region.</td>
+                    <td>Approximately 8 hours by land or 1 hour by plane to Legazpi.</td>
+                    <td>Trekking, sightseeing, and photography of the beautiful landscape.</td>
+                </tr>
+            </table>
+            <div class="video-container">
+                <video controls>
+                    <source controls autoplay src="images/mayon-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/mayon1.jfif" alt="Mayon Volcano Image 1" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/mayon2.jpg" alt="Mayon Volcano Image 2" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/mayon3.jpg" alt="Mayon Volcano Image 3" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/mayon4.jpg" alt="Mayon Volcano Image 4" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/mayon5.jpg" alt="Mayon Volcano Image 5" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/mayon6.jpg" alt="Mayon Volcano Image 6" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/mayon7.jpg" alt="Mayon Volcano Image 7" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/mayon8.jpg" alt="Mayon Volcano Image 8" onclick="openModal(this.src, this.alt)">
+                </div>
+            </div>
+
+            <table>
+                <tr>
+                    <th>Travel Tips</th>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Best Time to Visit</strong><br>
+                        The best time to visit Mayon Volcano is during the dry season, from November to May. This is when the weather is most stable, providing the best views of the volcano.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>How to Get There</strong><br>
+                        Fly into Legazpi Airport from Manila or Cebu, then take a taxi or shuttle to the city center. Mayon is easily accessible from various points in Albay.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Where to Stay</strong><br>
+                        Legazpi City offers a variety of accommodations, from luxury hotels with views of Mayon to budget-friendly guesthouses. Staying in Legazpi will also provide easy access to local attractions.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Pack Light, Pack Smart</strong><br>
+                        Bring comfortable clothing suitable for hiking and outdoor activities. Don’t forget a hat, sunscreen, and insect repellent. If you plan to hike, wear sturdy shoes.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Explore the Surroundings</strong><br>
+                        Take time to explore the surrounding areas of Mayon, including local markets, heritage sites, and other natural attractions like rivers and beaches.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Capture the Moments</strong><br>
+                        Bring a good camera to capture the breathtaking views of Mayon, especially during sunrise and sunset when the lighting is perfect.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Follow Local Guidelines</strong><br>
+                        Always respect local guidelines when trekking or exploring the area, and be mindful of the environment.
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img" alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Destinations - El Nido</title>
+</head>
+<body>
+    <header>
+        <div class="header-index">
+            <h1 class="header-title">Pinoy Escapes</h1>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <nav id="nav-menu" class="nav-menu">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="destinations.html">destinations</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="destinations">
+            <h2>EL NIDO</h2>
+            <table>
+                <tr>
+                    <th>Located</th>
+                    <th>Famous For</th>
+                    <th>Travel Hours From Manila</th>
+                    <th>Activities</th>
+                </tr>
+                <tr>
+                    <td>El Nido, Palawan Philippines</td>
+                    <td>Stunning limestone cliffs, clear turquoise waters, and vibrant marine life</td>
+                    <td>Around 1.5 hours by flight</td>
+                    <td>Island hopping, snorkeling, scuba diving, kayaking, and hiking</td>
+                </tr>
+            </table>
+            <div class="video-container">
+                <video controls>
+                    <source controls autoplay src="images/elnido-vid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/elnido1.jpg" alt="Gallery Image 1" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/elnido2.jpg" alt="Gallery Image 2" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/elnido3.jpg" alt="Gallery Image 3" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/elnido4.jpg" alt="Gallery Image 4" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/elnido5.jpg" alt="Gallery Image 5" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/elnido6.jpg" alt="Gallery Image 6" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/elnido7.jpg" alt="Gallery Image 7" onclick="openModal(this.src, this.alt)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/elnido8.jpg" alt="Gallery Image 8" onclick="openModal(this.src, this.alt)">
+                </div>
+            </div>
+
+
+            <table>
+                <tr>
+                    <th>Travel Tips</th>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Best Time to Visit</strong><br>
+                        The ideal time to visit El Nido is from November to May, during the dry season. This ensures clear skies and calm waters for island hopping and other outdoor activities.                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>How to Get There</strong><br>
+                        Fly from Manila to El Nido Airport (approximately 1.5 hours). Alternatively, you can fly to Puerto Princesa and take a van or bus to El Nido, which takes around 4-6 hours.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Where to Stay</strong><br>
+                        Bring lightweight clothing, swimwear, and a good pair of sandals for the beach. Don’t forget essentials like sunscreen, a hat, a reusable water bottle, and a waterproof bag for your belongings while island hopping.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Pack Light, Pack Smart</strong><br>
+                        Wear comfortable clothing and sturdy hiking shoes, as the trek can be challenging. Don’t forget essentials like sunscreen, a hat, and plenty of water. A lightweight backpack is useful for carrying your gear during the hike.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Join Island Hopping Tours</strong><br>
+                        Most visitors explore the area through island hopping tours (A, B, C, and D packages), which take you to the best spots for snorkeling, swimming, and relaxation. Ensure to book with reputable operators.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Try Local Snacks</strong><br>
+                        Sample fresh seafood and local dishes at beachfront restaurants. Don’t miss out on trying "kare-kare" (a Filipino oxtail stew) and "halo-halo" (a popular dessert) from local eateries.                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Respect the Environment</strong><br>
+                        Help preserve El Nido’s natural beauty by practicing sustainable tourism. Avoid single-use plastics, dispose of waste properly, and be mindful of marine life while snorkeling or diving.
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img" alt="">
+    </div>
+</body>
+</html>
