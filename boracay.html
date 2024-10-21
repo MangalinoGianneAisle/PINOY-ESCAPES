@@ -1,3 +1,9 @@
+<!--WEBISITE NAME: PINOY ESCAPES
+    Name: Mangalino, Gianne Aisle B.
+    Section: WD-202
+-->
+
+<!------------------------------------------------------------BORACAY PAGE-------------------------------------------------------------------------------->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,6 +31,8 @@
     <main>
         <section id="destinations">
             <h2>Boracay</h2>
+            
+                        <!--TABLE INFORMATIONS ABOUT BORACAY-->
             <table>
                 <tr>
                     <th>Located</th>
@@ -39,13 +47,18 @@
                     <td>Swimming, beach lounging, water sports, and nightlife experiences.</td>
                 </tr>
             </table>
+            
+            <!--a seperate div for the video so it will just have solo spot or place on the webpage-->
             <div class="video-container">
                 <video controls>
+                
+                    <!--i put "autoplay" so that the videos will just automatically play even when you dont click the play button-->
                     <source controls autoplay src="images/boracay-vid.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-
+            <!--Images for the gallery section of boracay-->
+            <!--i used the "Openmodal" to make the photos clickable-->
             <div class="gallery">
                 <div class="gallery-item">
                     <img src="images/bora1.jpg" alt="Boracay Image" onclick="openModal(this.src, this.alt)">
