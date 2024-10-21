@@ -1,17 +1,21 @@
+//FILE FOR MY JAVASCRIPT
+
+//to enable humburger menu:
 document.getElementById('hamburger').addEventListener('click', function() {
     const navMenu = document.getElementById('nav-menu');
-    navMenu.classList.toggle('active'); // Toggle the 'active' class to show/hide the menu
+    navMenu.classList.toggle('active'); 
 });
 
+//to allow the images of the gallery and video to be clickable
 function openModal(src, alt) {
     const modal = document.getElementById("modal");
     const modalImg = document.getElementById("modal-img");
-    modal.style.display = "flex"; // Show the modal
-    modalImg.src = src; // Set the image source
-    modalImg.alt = alt; // Set the alt text
+    modal.style.display = "flex"; 
+    modalImg.src = src; 
+    modalImg.alt = alt; 
 }
 
 function closeModal() {
     const modal = document.getElementById("modal");
-    modal.style.display = "none"; // Hide the modal
+    modal.style.display = "none"; 
 }
