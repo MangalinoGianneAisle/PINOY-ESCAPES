@@ -1,3 +1,8 @@
+<!--WEBISITE NAME: PINOY ESCAPES
+    Name: Mangalino, Gianne Aisle B.
+    Section: WD-202
+-->
+<!------------------------------------------------------------BOHOL PAGE-------------------------------------------------------------------------------->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,6 +30,8 @@
     <main>
         <section id="destinations">
             <h2>BOHOL CHOCOLATE HILLS</h2>
+            
+            <!--TABLE INFORMATIONS ABOUT BOHOL-->
             <table>
                 <tr>
                     <th>Located</th>
@@ -39,12 +46,18 @@
                     <td>Sightseeing, hiking, and visiting nearby attractions like the Tarsier Sanctuary.</td>
                 </tr>
             </table>
+            
+            <!--a seperate div for the video so it will just have solo spot or place on the webpage-->
             <div class="video-container">
                 <video controls>
+                    <!--i put "autoplay" so that the videos will just automatically play even when you dont click the play button-->
                     <source controls autoplay src="images/bohol-vid.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
+
+            <!--Images for the gallery section of bohol-->
+            <!--i used the "Openmodal" to make the photos clickable-->
             <div class="gallery">
                 <div class="gallery-item">
                     <img src="images/bohol1.jpg" alt="Bohol Image 1" onclick="openModal(this.src, this.alt)">
@@ -72,6 +85,7 @@
                 </div>
             </div>
 
+            <!--Another seperate table for the travel tips-->
             <table>
                 <tr>
                     <th>Travel Tips</th>
@@ -100,9 +114,7 @@
                         Bring swimwear, lightweight clothing, and reef-safe sunscreen. If you plan to visit the Chocolate Hills or go island hopping, consider packing a waterproof bag.
                     </td>
                 </tr>
-                <!-- Add more travel tips as needed -->
             </table>
-
         </section>
     </main>
     <script src="script.js"></script>
